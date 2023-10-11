@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+<div class="container p-4">
+    <div class="row mt-4">
+        <div class="col-6 border m-auto p-5 bg-white rounded-8px">
+            <div class="col-12 m-auto">
+
+                <div id="account" class="row d-flex flex-column">
+                    <p class="tittle-color font-weight-bold editContent">Account</p>
+                    <div class="d-flex bg-light border mb-3 p-2 pl-3 align-items-center">
+                        <div class="icon h-75 border-right mr-3 pr-3 bg-light">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" class="border-0 pix_text w-100 bg-light">
+                    </div>
+                    <div class="d-flex bg-light border mb-3 p-2 pl-3 align-items-center">
+                        <div class="icon h-75 border-right mr-3 pr-3 bg-light">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <input type="text" name="email" id="email" placeholder="Email Adress" class="border-0 pix_text w-100 bg-light">
+                    </div>
+                    <div class="d-flex bg-light border p-2 pl-3 align-items-center">
+                        <div class="icon h-75 border-right mr-3 pr-3 bg-light">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <input type="password" name="password" id="password" placeholder="Password" class="border-0 pix_text w-100 bg-light">
+                    </div>
+                </div>
+
+                <div id="infor" class="row d-flex mt-5">
+                    <div class="col pr-2 pl-0">
+                        <p class="tittle-color font-weight-bold editContent">Date of Birth</p>
+                        <div class="d-flex mb-3 justify-content-between h-50" >
+                            <input type="number" maxlength="2" minlength="1" name="day" id="day" placeholder="DD" class="border pix_text w-30 pl-3 mr-2 bg-light">
+                            <input type="number" maxlength="2" minlength="2" name="month" id="month" placeholder="MM" class="border pix_text w-30 pl-3 bg-light">
+                            <input type="number" maxlength="4" minlength="4" name="year" id="year" placeholder="YYYY" class="border pix_text w-40 pl-3 ml-2 bg-light">
+                        </div>
+                    </div>
+                    <div class="col pl-0 pr-0">
+                        <p class="tittle-color font-weight-bold editContent">Gender</p>
+                        <div class="d-flex">
+                            <div class="border w-50 ">
+                                <input type="radio" name="gender" id="rd-male" class="border bg-light">
+                                <label for="rd-male" class="w-100 text-center">Male</label>
+                            </div>
+                            <div class="border w-50">
+                                <input type="radio" name="gender" id="rd-female" class="border bg-light">
+                                <label for="rd-female" class="w-100 text-center ">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="payment" class="row mt-5 d-flex flex-column">
+                    <p class="tittle-color font-weight-bold editContent">Payment Details</p>
+                    <div class="col pl-0 pr-0 d-flex">
+                        <div class="border w-50 ">
+                            <input type="radio" name="payment" id="credit-card" class="border bg-light">
+                            <label for="credit-card" class="w-100 text-center"><i class="fa-brands fa-cc-visa mr-2"></i>Credit Card</label>
+                        </div>
+                        <div class="border w-50 ">
+                            <input type="radio" name="payment" id="paypal" class="border bg-light">
+                            <label for="paypal" class="w-100 text-center">Paypal</label>
+                        </div>
+                    </div>
+                    <div class="d-flex bg-light border p-2 pl-3 mt-3 align-items-center">
+                        <div class="icon h-75 border-right mr-3 pr-3 bg-light">
+                            <i class="fa-regular fa -credit-card"></i>
+                        </div>
+                        <input type="text" name="card-Number" id="card-Number" placeholder="Card Number" class="border-0 pix_text w-100 bg-light">
+                    </div>
+
+                    <div class="col p-0 d-flex mt-3">
+                        <div class="col pr-2 pl-0">
+                            <div class="d-flex bg-light border p-2 pl-3 align-items-center">
+                                <div class="icon h-75 border-right mr-3 pr-3 ml-1 bg-light">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <input type="text" name="card-CVC" id="card-CVC" placeholder="Card CVC" class="border-0 pix_text w-100 bg-light">
+                            </div>
+                        </div>
+                        <div class="col pl-0 pr-0">
+                            <div class="d-flex h-100">
+                                <div class="border w-50 h-100">
+                                    <select id="CVC-month" name="CVC-month" class="border-0 w-95 p-0 float-right h-100 bg-light font-weight-bold text-secondary">
+                                        <option value="desc">Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                </div>
+                                <div class="border w-50 h-100">
+                                    <select id="CVC-year" name="CVC-year" class="border-0 w-95 p-2 float-right h-100 bg-light font-weight-bold text-secondary">
+                                        <option value="desc">Year</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="" class="row mt-5 d-flex flex-column">
+                    <p class="tittle-color font-weight-bold editContent">Terms and Conditions</p>
+                    <div class="d-flex align-items-start">
+                        <input type="checkbox" name="gender" id="rd-male" class="mt-1 mr-2" style="cursor: pointer;">
+                        <p class="text-secondary">I accept the terms and conditions for signing up to this service, and hereby confirm I have red the privacy policity</p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery-migrate-3.4.0.min.js"></script>
+</body>
+
+</html>
